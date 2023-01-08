@@ -1,6 +1,6 @@
 import CardProduct from '@/common/components/Card/CardProduct';
 import Footer from '@/common/components/Footer';
-import Layout from '@/common/components/Layout';
+import Layout from '@/common/components/Layout/LayoutDefault';
 import Pagination from '@/common/components/Pagination';
 import { useState } from 'react';
 

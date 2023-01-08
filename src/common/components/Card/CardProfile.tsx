@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const CardProfile = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location);
+  }, [location]);
+
   return (
     <div className='shadow'>
       <div className='h-20 bg-blue-300' />
@@ -14,12 +21,24 @@ const CardProfile = () => {
         </div>
       </div>
       <ul className='text-sm pb-2'>
-        <li className='uppercase px-4 py-2 hover:bg-green-200 cursor-pointer'>
-          profile settings
-        </li>
-        <li className='uppercase px-4 py-2 hover:bg-green-200 cursor-pointer'>
-          orders list
-        </li>
+        <Link to='/profile'>
+          <li
+            className={`uppercase px-4 py-2 hover:bg-green-100 cursor-pointer ${
+              location.pathname === '/profile' && 'bg-green-100'
+            }`}
+          >
+            profile settings
+          </li>
+        </Link>
+        <Link to='/order'>
+          <li
+            className={`uppercase px-4 py-2 hover:bg-green-100 cursor-pointer ${
+              location.pathname === '/order' && 'bg-green-100'
+            }`}
+          >
+            orders list
+          </li>
+        </Link>
       </ul>
     </div>
   );

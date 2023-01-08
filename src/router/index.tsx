@@ -1,6 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Home from '@/pages';
 import Profile from '@/pages/profile';
+import Order from '@/pages/order';
+import Detail from '@/pages/detail';
 
 const router = createBrowserRouter([
   {
@@ -10,6 +12,14 @@ const router = createBrowserRouter([
   {
     path: '/profile',
     element: <Profile />,
+  },
+  {
+    path: '/order',
+    element: <Order />,
+  },
+  {
+    path: '/product/:id',
+    element: <Detail />,
   },
 ]);
 

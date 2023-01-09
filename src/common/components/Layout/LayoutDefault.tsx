@@ -11,7 +11,7 @@ const LayoutDefault = ({ children }: LayoutDefaultType) => {
   return (
     <div className='bg-white min-h-screen w-full'>
       <Topbar />
-      <div className='py-8'>{children}</div>
+      <div className='pt-8'>{children}</div>
       <ToastContainer
         position='top-right'
         autoClose={5000}

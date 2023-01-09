@@ -71,7 +71,7 @@ const Footer = () => {
               placeholder='Your email'
               className='h-10 border p-2 text-sm w-full text-black'
             />
-            <button className='bg-green-500 h-10 px-4 text-white uppercase text-sm w-40'>
+            <button className='bg-green-600 h-10 px-4 text-white uppercase text-sm w-40'>
               Send email
             </button>
           </div>

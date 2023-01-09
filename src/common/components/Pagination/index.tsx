@@ -23,7 +23,7 @@ function Pagination({ handlePageClick, pageCount }: PaginationType) {
         pageClassName='px-3 py-2 rounded'
         previousClassName='p-2'
         nextClassName='p-2'
-        activeClassName='bg-green-500 text-white'
+        activeClassName='bg-green-600 text-white'
         disabledClassName='text-disabled'
       />
     </div>

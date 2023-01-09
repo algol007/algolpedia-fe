@@ -17,7 +17,7 @@ const Detail = () => {
 
   return (
     <LayoutDefault>
-      <div>
+      <div className='mb-8'>
         <div className='container mx-auto flex mb-8'>
           <div className='w-2/5'>
             <div className='w-full mb-8'>

@@ -93,7 +93,7 @@ const Profile = () => {
               </span>
             )}
           </div>
-          <button className='uppercase bg-green-500 text-white w-full py-2 text-sm mt-2 hover:bg-green-600'>
+          <button className='uppercase bg-green-600 text-white w-full py-2 text-sm mt-2 hover:bg-green-600'>
             update profile
           </button>
         </div>

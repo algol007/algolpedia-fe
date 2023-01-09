@@ -38,7 +38,7 @@ const Topbar = () => {
 
   return (
     <div>
-      <div className='bg-green-500 w-full'>
+      <div className='bg-green-600 w-full'>
         <div className='flex items-center justify-between container mx-auto'>
           <div className='flex items-center text-sm text-white py-2 gap-12'>
             <div>+62 822 9167 6911</div>
@@ -80,7 +80,9 @@ const Topbar = () => {
           >
             Hi, John Doe
           </div>
-          <span className='material-symbols-outlined'>shopping_bag</span>
+          <Link to='/cart'>
+            <span className='material-symbols-outlined'>shopping_bag</span>
+          </Link>
           {isShow && (
             <div className='absolute top-10 text-sm bg-black py-1 right-8'>
               <Link to='/profile'>
@@ -88,7 +90,7 @@ const Topbar = () => {
                   Profile
                 </div>
               </Link>
-              <Link to='/auth'>
+              <Link to='/login'>
                 <div className='w-28 text-white py-2 px-3 hover:bg-gray-700 cursor-pointer'>
                   Logout
                 </div>
